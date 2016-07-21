@@ -1,4 +1,4 @@
-import * as type from '../constants';
+import * as type from 'constants';
 
 export function increment (data) {
     return {

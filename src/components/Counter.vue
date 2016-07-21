@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import { remarks } from '../filters';
-import { increment, decrement } from '../actions';
+import { remarks } from 'filters';
+import { increment, decrement } from 'actions';
 export default {
     vuex: {
         getters: {

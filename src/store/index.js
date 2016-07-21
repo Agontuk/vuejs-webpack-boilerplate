@@ -1,6 +1,6 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
-import * as type from '../constants';
+import * as type from 'constants';
 import { increment, decrement } from '../mutators';
 
 // important, teaches Vue components how to

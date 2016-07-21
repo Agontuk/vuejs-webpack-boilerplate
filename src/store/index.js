@@ -10,11 +10,11 @@ const state = {
 };
 
 const mutations = {
-    INCREMENT (state) {
-        state.count++;
+    INCREMENT (state, action) {
+        state.count += action.data;
     },
-    DECREMENT (state) {
-        state.count--;
+    DECREMENT (state, action) {
+        state.count -= action.data;
     }
 };
 

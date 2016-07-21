@@ -1,12 +1,13 @@
 <template>
     <div>
         <h1>Counter: {{ count }}</h1>
-        <button @click="increment">Increment</button>
-        <button @click="decrement">Decrement</button>
+        <button @click="increment(2)">Increment</button>
+        <button @click="decrement(1)">Decrement</button>
     </div>
 </template>
 
 <script>
+import { increment, decrement } from '../actions';
 export default {
     vuex: {
         getters: {
@@ -15,8 +16,7 @@ export default {
             }
         },
         actions: {
-            increment: ({ dispatch }) => dispatch('INCREMENT'),
-            decrement: ({ dispatch }) => dispatch('DECREMENT')
+            increment, decrement
         }
     }
 };

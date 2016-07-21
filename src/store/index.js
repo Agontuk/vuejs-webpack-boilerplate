@@ -1,5 +1,6 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
+import { increment, decrement } from '../mutators';
 
 // important, teaches Vue components how to
 // handle Vuex-related options
@@ -11,10 +12,10 @@ const state = {
 
 const mutations = {
     INCREMENT (state, action) {
-        state.count += action.data;
+        increment(state, action);
     },
     DECREMENT (state, action) {
-        state.count -= action.data;
+        decrement(state, action);
     }
 };
 

@@ -16,7 +16,12 @@ export default {
             }
         },
         actions: {
-            increment, decrement
+            increment: ({ dispatch }, data) => {
+                dispatch(increment(data));
+            },
+            decrement: ({ dispatch }, data) => {
+                dispatch(decrement(data));
+            }
         }
     }
 };

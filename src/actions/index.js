@@ -1,13 +1,13 @@
-export function increment ({ dispatch }, data) {
-    dispatch({
+export function increment (data) {
+    return {
         type: 'INCREMENT',
         data: data
-    });
+    };
 }
 
-export function decrement ({ dispatch }, data) {
-    dispatch({
+export function decrement (data) {
+    return {
         type: 'DECREMENT',
         data: data
-    });
+    };
 }

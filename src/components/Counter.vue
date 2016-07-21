@@ -1,12 +1,13 @@
 <template>
     <div>
-        <h1>Counter: {{ count }}</h1>
+        <h1>Counter: {{ count | remarks }}</h1>
         <button @click="increment(2)">Increment</button>
         <button @click="decrement(1)">Decrement</button>
     </div>
 </template>
 
 <script>
+import { remarks } from '../filters';
 import { increment, decrement } from '../actions';
 export default {
     vuex: {

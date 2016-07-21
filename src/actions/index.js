@@ -1,13 +1,15 @@
+import * as type from '../constants';
+
 export function increment (data) {
     return {
-        type: 'INCREMENT',
+        type: type.INCREMENT,
         data: data
     };
 }
 
 export function decrement (data) {
     return {
-        type: 'DECREMENT',
+        type: type.DECREMENT,
         data: data
     };
 }

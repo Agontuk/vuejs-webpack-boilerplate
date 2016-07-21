@@ -1,5 +1,6 @@
 import Vuex from 'vuex';
 import Vue from 'vue';
+import * as type from '../constants';
 import { increment, decrement } from '../mutators';
 
 // important, teaches Vue components how to
@@ -11,10 +12,10 @@ const state = {
 };
 
 const mutations = {
-    INCREMENT (state, action) {
+    [type.INCREMENT]: (state, action) => {
         increment(state, action);
     },
-    DECREMENT (state, action) {
+    [type.DECREMENT]: (state, action) => {
         decrement(state, action);
     }
 };

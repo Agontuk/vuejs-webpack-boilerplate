@@ -1,16 +1,16 @@
 <template>
     <div id="app">
         <img class="logo" src="./assets/logo.png">
-        <hello></hello>
+        <counter></counter>
     </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Counter from './components/Counter';
 
 export default {
     components: {
-        Hello
+        Counter
     }
-}
+};
 </script>

@@ -7,12 +7,11 @@
 </template>
 
 <script>
-import { remarks } from 'filters';
 import { increment, decrement } from 'actions';
 export default {
     vuex: {
         getters: {
-            count: function (state) {
+            count: (state) => {
                 return state.count;
             }
         },

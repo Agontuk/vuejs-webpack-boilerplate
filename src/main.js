@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import store from './store';
 import App from './App';
+import { remarks } from './filters';
+
+Vue.filter('remarks', remarks);
 
 new Vue({
     el: 'body',

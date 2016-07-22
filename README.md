@@ -1,10 +1,21 @@
-# vuex-webpack-boilerplate
+# vuejs-webpack-boilerplate
 
-> Simple webpack boilerplate for Vue JS with Vuex
+> Simple webpack boilerplate for Vue JS which uses Vuex for state management.
 
-## Build Setup
+## Features
+* Hot Reloading
+* Eslint support
+* Sample counter app example
+* Single State Tree with Vuex
+
+> Initial directory structure is generated using the awesome `vue-cli` tool.
+
+## Setup
 
 ``` bash
+$ git clone git@github.com:Agontuk/vuejs-webpack-boilerplate.git
+$ cd vuejs-webpack-boilerplate
+
 # install dependencies
 npm install
 
@@ -15,4 +26,7 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> NOTE: This project is for personal use. So no future support is guaranteed.
+
+## License
+[MIT](http://opensource.org/licenses/MIT)

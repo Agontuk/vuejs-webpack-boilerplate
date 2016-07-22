@@ -17,13 +17,13 @@ $ git clone git@github.com:Agontuk/vuejs-webpack-boilerplate.git
 $ cd vuejs-webpack-boilerplate
 
 # install dependencies
-npm install
+$ npm install
 
 # serve with hot reload at localhost:8080
-npm run dev
+$ npm run dev
 
 # build for production with minification
-npm run build
+$ npm run build
 ```
 
 > NOTE: This project is for personal use. So no future support is guaranteed.

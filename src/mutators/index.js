@@ -1,7 +1,13 @@
-export function increment (state, action) {
-    state.count += action.data;
-}
+import * as type from 'constants';
+import { increment, decrement } from './lib/counter';
 
-export function decrement (state, action) {
-    state.count -= action.data;
-}
+const mutations = {
+    [type.INCREMENT]: (state, action) => {
+        increment(state, action);
+    },
+    [type.DECREMENT]: (state, action) => {
+        decrement(state, action);
+    }
+};
+
+export default mutations;

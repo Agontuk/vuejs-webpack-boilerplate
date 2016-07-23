@@ -14,6 +14,7 @@
 
 ``` bash
 $ git clone git@github.com:Agontuk/vuejs-webpack-boilerplate.git
+
 $ cd vuejs-webpack-boilerplate
 
 # install dependencies
